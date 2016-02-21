@@ -391,6 +391,21 @@ ul.banner-signup-buttons {
     }
 }
 
+
+/*Events Main*/
+.events-main {
+    width: 100%;
+    padding: 50px 0;
+    color: #000;
+    background-color: #fff;
+}
+
+.events-main li {
+    list-style-type: none;
+    text-align: left;
+}
+
+
 /*Events*/
 
 .events {
@@ -457,7 +472,7 @@ footer p {
     background: rgba(255,255,255,.2);
 }
 
-::selection {
+::selection { 
     text-shadow: none;
     background: #fcfcfc;
     background: rgba(255,255,255,.2);
