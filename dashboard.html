@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Grayscale - Start Bootstrap Theme</title>
+    <title>Dashboard</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -36,7 +36,7 @@
     <!-- Navigation -->
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-                  <nav class="navbar navbar-inverse navbar-fixed-top" id="my-number">
+<!--                   <nav class="navbar navbar-inverse navbar-fixed-top" id="my-number">
         <div class="container">
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 
@@ -71,119 +71,233 @@
              
             </div>
 
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav"> -->
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     
             
-            <a href="" class="btn btn-primary navbar-btn navbar-left">Log in</a>
+            <!-- <a href="" class="btn btn-primary navbar-btn navbar-left">Log in</a>
             
             
             </div>
-        </nav>
+        </nav> -->
        
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <!-- <a class="navbar-brand page-scroll" href="#page-top"> 
+                    <i class="fa fa-play-circle"></i>  <span class="light">Go to</span> top
+                </a> -->
+            </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#mentors" class="page-scroll"> <span class="tiles network-name">Mentors</span></a>
+                    </li>
+                    <li>
+                        <a href="#events" class="page-scroll"> <span class="tiles network-name">Events</span></a>
+                    </li>
+                    <li>
+                        <a href="#scholarships" class="page-scroll"> <span class="tiles network-name">Scholarships</span></a>
+                    </li>
+                    <li>
+                        <a href="#bootcamps" class="page-scroll"> <span class="tiles network-name">Bootcamps</span></a>
+                    <li>
+                        <a class="page-scroll" href="#">Log Out</a>
+                    </li>
+                </ul>
+            </div> <!-- /.navbar-collapse -->
+        </div> <!-- /.container -->
+    </nav>
             
       
     
 
     <!-- Intro Header -->
-    <header class="intro">
+    <!-- <header class="intro">
         <div class="intro-body">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <h1 class="brand-heading">Dashboard</h1>
-                        
-                                           <div class="btn-group">
-                                               <div class="col-md-4 col-md-push-4 control-label"></label>
-       <div class="col-md-2 center-block">
-                <a href="#mentors" class="btn btn-lg btn-primary">Mentors</a>
-                    <a href="#events" class="btn btn-lg btn-primary">Events</a>
-                                               </div>
-                <div class="col-md-2 col-md-push-8 control=label"></label>
-       <div class="col-md-4 center-block">  
-                    <a href="#scholarships" class="btn btn-lg btn-primary">Scholarships</a>   
-                    <a href="#bootcamps" class="btn btn-lg btn-primary">Boot Camps</a>  
+                            <div class="btn-group">
+                                <div class="col-md-4 col-md-push-4 control-label"></label>
+                                    <div class="col-md-2 center-block">
+                                        <a href="#mentors" class="btn btn-lg btn-primary">Mentors</a>
+                                        <a href="#events" class="btn btn-lg btn-primary">Events</a>
+                                    </div>
+                                    <div class="col-md-2 col-md-push-8 control=label"></label>
+                                        <div class="col-md-4 center-block">  
+                                            <a href="#scholarships" class="btn btn-lg btn-primary">Scholarships</a>   
+                                            <a href="#bootcamps" class="btn btn-lg btn-primary">Boot Camps</a>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-        <style>
-            
-            
-       .btn-primary {
+                </div>
+            </div>
+    </header> -->
+
+<header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Dashboard</h1>
+                            <ul class="list-inline banner-signup-buttons">
+                                <li>
+                                    <a href="#mentors" class="page-scroll btn btn-default btn-lg"> <span class="tiles network-name">Mentors</span></a>
+                                </li>
+                                <li>
+                                    <a href="#events" class="page-scroll btn btn-default btn-lg"> <span class="tiles network-name">Events</span></a>
+                                </li>
+                                <li>
+                                    <a href="#scholarships" class="page-scroll btn btn-default btn-lg"> <span class="tiles network-name">Scholarships</span></a>
+                                </li>
+                                <li>
+                                    <a href="#bootcamps" class="page-scroll btn btn-default btn-lg"> <span class="tiles network-name">Bootcamps</span></a>
+                                </li>
+                            </ul>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<!--/*<style>
+.btn-primary {
     background: #BE81F7;
     color: #ffffff; 
-       }
-            
- 
+}
+
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
     background: #BE81F7;
 }
- 
+
 .btn-primary:active, .btn-primary.active {
     background: #BE81F7;
     box-shadow: none;
 }
  
-                                               </style>
+</style>*/-->
             
-                        
-                        
-                        
-                        </div>
-                        
-    
-                        </a>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-        
-          
-    </header>
+
+
 
     <!-- Mentors Section -->
     <section id="mentors" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Mentors</h2>
-                <p>Stuff about mentors djfaslfjaisdlfjaclsk;fd</p>
+                <ul class="mentor-list">
+                    <li>
+                        <img src="http://placehold.it/100x100" alt="mentor pic">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam enim voluptas ipsa, magni dolorum.</p>
+                    </li>
+                    <li>
+                        <img src="http://placehold.it/100x100" alt="mentor pic">
+                        <p>Maxime temporibus eos distinctio, error consequuntur. Laboriosam ad tenetur magnam ab esse provident consectetur cupiditate quidem.</p>
+                    </li>
+                    <li>
+                        <img src="http://placehold.it/100x100" alt="mentor pic">
+                        <p>Officia ducimus tempore natus eligendi commodi eos dolorem sint libero! Dolorem reprehenderit assumenda deleniti maiores.</p>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
 
     <!-- Events Section -->
     <section id="events" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Events</h2>
-                    <p>Stuff about events sdlfjlsakdfajskd</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
- <!-- Boot Camps Section -->
-    <section id="bootcamps" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Boot Camps</h2>
-                    <p>Info about upcoming boot camps</p>
-                </div>
+        <div class="container events">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Events</h2>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <h3>Event Name</h3>
+                        </a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, rerum, molestias? Omnis impedit error, dolorum, autem odit, saepe magnam dolor laudantium assumenda quam inventore fugiat repudiandae! Quibusdam harum ipsa explicabo?</p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h3>Event Name</h3>
+                        </a>
+                        <p>Minus alias, debitis provident ipsum, optio laborum vel sequi ipsam ut neque voluptates autem minima quas eligendi repudiandae similique tempora, modi. Accusamus consequuntur obcaecati itaque eveniet hic dolore, repellendus voluptates!</p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h3>Event Name</h3>
+                        </a>
+                        <p>Necessitatibus sunt, maiores assumenda consectetur odit pariatur fugit, excepturi ex minus animi nam quibusdam rerum aspernatur corporis totam quis saepe enim praesentium consequuntur iusto ipsa. Commodi tempore vitae quisquam, illo.</p>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
 
  <!-- Scholarships Section -->
     <section id="scholarships" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Scholarships</h2>
-                    <p>Scholarship info</p>
-                </div>
+        <div class="container scholarships">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Scholarships</h2>
+                <ul>
+                    <li>
+                        <a href="#" target="_blank">
+                            <h3>Scholarship Name</h3>
+                        </a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, rerum, molestias? Omnis impedit error, dolorum, autem odit, saepe magnam dolor laudantium assumenda quam inventore fugiat repudiandae! Quibusdam harum ipsa explicabo?</p>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <h3>Scholarship Name</h3>
+                        </a>
+                        <p>Minus alias, debitis provident ipsum, optio laborum vel sequi ipsam ut neque voluptates autem minima quas eligendi repudiandae similique tempora, modi. Accusamus consequuntur obcaecati itaque eveniet hic dolore, repellendus voluptates!</p>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <h3>Scholarship Name</h3>
+                        </a>
+                        <p>Necessitatibus sunt, maiores assumenda consectetur odit pariatur fugit, excepturi ex minus animi nam quibusdam rerum aspernatur corporis totam quis saepe enim praesentium consequuntur iusto ipsa. Commodi tempore vitae quisquam, illo.</p>
+                    </li>
+                </ul>
             </div>
         </div>
+    </section>
+
+ <!-- Boot Camps Section -->
+    <section id="bootcamps" class="content-section text-center">
+            <div class="container bootcamp">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Bootcamps</h2>
+                    <ul>
+                    <li>
+                        <a href="#" target="_blank">
+                            <h3>Bootcamp</h3>
+                        </a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, rerum, molestias? Omnis impedit error, dolorum, autem odit, saepe magnam dolor laudantium assumenda quam inventore fugiat repudiandae! Quibusdam harum ipsa explicabo?</p>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <h3>Bootcamp</h3>
+                        </a>
+                        <p>Minus alias, debitis provident ipsum, optio laborum vel sequi ipsam ut neque voluptates autem minima quas eligendi repudiandae similique tempora, modi. Accusamus consequuntur obcaecati itaque eveniet hic dolore, repellendus voluptates!</p>
+                    </li>
+                </ul>
+                </div>
+            </div>
     </section>
 
    
